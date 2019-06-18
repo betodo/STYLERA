@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">StyleRa</string>
+    <string name="underline1"><u>아이디를 잊으셨나요?</u></string>
+    <string name="underline2"><u>비밀번호를 잊으셨나요?</u></string>
+
+</resources>
