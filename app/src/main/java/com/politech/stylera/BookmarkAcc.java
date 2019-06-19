@@ -1,6 +1,5 @@
 package com.politech.stylera;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -55,8 +54,8 @@ public class BookmarkAcc extends AppCompatActivity {
         setUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SetUpAcc.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), SetUpAcc.class);
+//                startActivity(intent);
                 finish();
             }
         });

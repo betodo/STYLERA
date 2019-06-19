@@ -1,19 +1,34 @@
 package com.politech.stylera;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SetUpAcc extends AppCompatActivity {
-    ImageButton cateBtn, searchBtn, bookmarkBtn, boardBtn, setUpBtn;
+public class LoginAcc extends AppCompatActivity {
+
+    TextView textView;
+    ImageButton cateBtn, searchBtn, bookmarkBtn, boardBtn, login_backBtn;
+    Button loginBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.set_up);
+        setContentView(R.layout.login);
+        textView = findViewById(R.id.textView3);
+
+        loginBtn = (Button) findViewById(R.id.main_loginBtn);
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SearchAcc.class);
+                startActivity(intent);
+            }
+        });
 
         cateBtn = (ImageButton) findViewById(R.id.cateBtn);
         cateBtn.setOnClickListener(new View.OnClickListener() {
@@ -21,7 +36,6 @@ public class SetUpAcc extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CateAcc.class);
                 startActivity(intent);
-                finish();
             }
         });
         searchBtn = (ImageButton) findViewById(R.id.searchBtn);
@@ -30,7 +44,7 @@ public class SetUpAcc extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SearchAcc.class);
                 startActivity(intent);
-                finish();
+
             }
         });
         bookmarkBtn = (ImageButton) findViewById(R.id.bookmarkBtn);
@@ -39,7 +53,7 @@ public class SetUpAcc extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), BookmarkAcc.class);
                 startActivity(intent);
-                finish();
+
             }
         });
         boardBtn = (ImageButton) findViewById(R.id.boardBtn);
@@ -48,18 +62,16 @@ public class SetUpAcc extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), BoardAcc.class);
                 startActivity(intent);
-                finish();
+
             }
         });
-        setUpBtn = (ImageButton) findViewById(R.id.setBtn);
-        setUpBtn.setOnClickListener(new View.OnClickListener() {
+        login_backBtn = (ImageButton) findViewById(R.id.login_backBtn);
+        login_backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SetUpAcc.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
-
     }
 }

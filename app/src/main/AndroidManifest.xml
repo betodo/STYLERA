@@ -16,11 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginAcc"></activity>
         <activity android:name=".SearchAcc"></activity>
         <activity android:name=".CateAcc"></activity>
         <activity android:name=".BoardAcc"></activity>
         <activity android:name=".BookmarkAcc"></activity>
-        <activity android:name=".SetUpAcc"></activity>
     </application>
 
 </manifest>
