@@ -62,15 +62,6 @@ public class SearchAcc extends AppCompatActivity {
                 finish();
             }
         });
-        setUpBtn = (ImageButton) findViewById(R.id.setBtn);
-        setUpBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), SetUpAcc.class);
-//                startActivity(intent);
-                finish();
-            }
-        });
 
         search_backBtn = (ImageButton) findViewById(R.id.search_backBtn);
         search_backBtn.setOnClickListener(new View.OnClickListener() {

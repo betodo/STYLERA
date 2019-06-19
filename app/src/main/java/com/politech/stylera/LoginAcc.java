@@ -19,14 +19,14 @@ public class LoginAcc extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        textView = findViewById(R.id.textView3);
 
-        loginBtn = (Button) findViewById(R.id.main_loginBtn);
+        loginBtn = (Button) findViewById(R.id.login_loginBtn);
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SearchAcc.class);
                 startActivity(intent);
+                finish();
             }
         });
 
