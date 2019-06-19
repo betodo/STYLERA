@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SearchAcc extends AppCompatActivity {
-    ImageButton cateBtn, searchBtn, bookmarkBtn, boardBtn, setUpBtn;
+    ImageButton cateBtn, searchBtn, bookmarkBtn, boardBtn, setUpBtn, search_backBtn;
     Button search_searchBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +68,16 @@ public class SearchAcc extends AppCompatActivity {
             public void onClick(View view) {
 //                Intent intent = new Intent(getApplicationContext(), SetUpAcc.class);
 //                startActivity(intent);
+                finish();
+            }
+        });
+
+        search_backBtn = (ImageButton) findViewById(R.id.search_backBtn);
+        search_backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
                 finish();
             }
         });

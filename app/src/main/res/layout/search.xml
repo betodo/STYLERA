@@ -21,27 +21,53 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="5">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="StryleRa"
-                    android:textSize="30dp"
-                    android:gravity="center_vertical"
-                    android:layout_marginLeft="10dp"/>
+                android:layout_weight="2">
+
+                <ImageButton
+                    android:id="@+id/cateBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cate" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:gravity="right">
+                android:layout_weight="2">
+
                 <ImageButton
-                    android:id="@+id/person"
+                    android:id="@+id/searchBtn"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    app:srcCompat="@drawable/person" />
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/search" />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/bookmarkBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/bookmark" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <ImageButton
+                    android:id="@+id/boardBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/board" />
+            </LinearLayout>
+
         </LinearLayout>
 
 
@@ -189,57 +215,12 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
+            <ImageButton
+                android:id="@+id/search_backBtn"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="2">
-
-
-                <ImageButton
-                    android:id="@+id/cateBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/cate" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2">
-
-                <ImageButton
-                    android:id="@+id/searchBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/search" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/bookmarkBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/bookmark" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2">
-
-                <ImageButton
-                    android:id="@+id/boardBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/board" />
-            </LinearLayout>
+                android:layout_weight="1"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
 
         </LinearLayout>
 
