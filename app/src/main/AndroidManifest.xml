@@ -21,6 +21,7 @@
         <activity android:name=".CateAcc"></activity>
         <activity android:name=".BoardAcc"></activity>
         <activity android:name=".BookmarkAcc"></activity>
+        <activity android:name=".ProductAcc"></activity>
     </application>
 
 </manifest>
