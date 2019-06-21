@@ -157,7 +157,7 @@
                         android:layout_weight="0.2">
                         <ImageButton
                             android:background="@drawable/box_style2"
-                            android:id="@+id/imageButton7"
+                            android:id="@+id/imageButton79"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
